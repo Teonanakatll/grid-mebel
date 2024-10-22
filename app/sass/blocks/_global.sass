@@ -1,0 +1,33 @@
+.wrapper 
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+	max-width: 1920px
+
+.main 
+	flex: 1 0 auto
+	// background-color: $acc    ent
+
+.footer 
+	flex: 0 0 auto
+
+.container
+	max-width: 1140px
+	margin: 0 auto
+	padding: 0 15px
+	// background-color: #c4c1c1
+
+%title-font
+	font-family: montserrat-m, sans-serif
+	font-weight: 700
+
+//                                swiper vars
+html
+	--swiper-pagination-bullet-horizontal-gap: 15px
+.pagination-custom
+	text-align: center
+	.swiper-pagination-bullet
+		background-color: $main-black
+		opacity: 1
+		&.swiper-pagination-bullet-active
+			background-color: $accent

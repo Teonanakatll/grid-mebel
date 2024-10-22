@@ -1,0 +1,263 @@
+.header
+	&__inner
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 120px
+	&__btn, &__btn > svg
+		width: 37px
+		height: 29px
+		opacity: 0.7
+		transition: opacity .25s ease-out
+	&__btn:hover
+		opacity: 1
+	&__btn
+		padding: 0
+		margin: 0 0 0 62px
+		border: none
+		background-color: transparent
+		cursor: pointer
+
+.logo
+	margin: 0 auto
+	padding-left: 70px
+
+.menu
+	padding-left: 32px
+	&__list
+		display: flex
+	// &__list-item:first-child      // или выбрать второй эл. .it + .it и задать ml
+	// 	margin-right: 80px
+	&__list-item + &__list-item
+		margin-left: 80px
+	&__list-link
+		@extend %title-font
+		color: rgba($textcolor, .9)
+		line-height: 22px
+		transition: color .25s ease-out
+		&:hover
+			color: #000
+
+//                                                 footer
+
+.footer
+	flex: 0 0 auto
+	&__content
+		background-color: #dfdfdf
+		padding: 60px 0 80px
+	&__inner
+		display: flex
+		justify-content: space-between
+	&__info
+		width: 540px
+	&__info-title
+		color: $main-black
+		@extend %title-font
+		margin-bottom: 14px
+		line-height: 23px
+		font-size: 16px
+		margin-bottom: 14px
+	&__info-text
+		max-width: 480px
+		margin-bottom: 16px
+	&__info-mail
+		font-weight: 600
+		font-size: 14px
+		color: $main-black
+		display: flex
+		align-items: center
+		margin-bottom: 22px
+		transition: color .25s ease-out
+		&:hover
+			color: #000
+			.footer__info-icon
+				fill: #000
+
+	&__info-icon
+		height: 16px
+		width: 16px
+		margin-right: 14px
+		fill: $main-black
+		transition: fill .25s ease-out
+	&__form
+		display: flex
+		justify-content: space-between
+		&-input, &-button
+			height: 40px
+			border-radius: 5em
+		&-input
+			flex: 1 0 auto
+			margin-right: 9px
+			padding: 0 17px
+			border: none
+			background-color: transparent
+			border: 1px solid $main-black
+			&::placeholder
+				font-family: open-sans-m, sans-serif
+				font-weight: 400
+				font-size: 16px
+				color: #a1a1a1
+				line-height: 28px
+			
+		&-button
+			font-weight: 600
+			background-color: $main-black
+			width: 160px
+			border: none
+			color: #fffff0
+			cursor: pointer
+
+	&__social, &__menu
+		font-weight: 600
+		font-size: 14px
+		width: 125px
+
+	&__social
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		margin-right: auto
+		margin-left: 100px
+	&__social-item
+		&:hover
+			.footer__social-link
+				color: #000
+			.footer__social-icon
+				fill: #000000FF	
+	&__social-link
+		color: #707070
+		display: flex
+		align-items: center
+		transition: color .25s ease-out
+	&__social-icon
+		height: 18px
+		width: 18px
+		margin-right: 12px
+		fill: #707070
+		transition: fill .25s ease-out
+
+	&__menu
+		margin-right: 60px
+		&-item
+			margin-bottom: 15px
+		&-link
+			color: #707070
+			transition: color .25s ease-out
+			&:hover
+				color: #000
+		
+	&__copyright
+		background-color: $main-black
+		height: 110px
+		display: flex
+		align-items: center
+		justify-content: center
+		color: #a1a1a1
+		p
+			margin: 0 10px
+
+//                                                  rightside-menu
+
+.rightside-menu
+	position: absolute
+	right: 0
+	top: 0
+	bottom: 0
+	//               чтобы при poxition: absolute,  max-width не схлопывался до минимального контента
+	//                                       нужно прописать width: 100%
+	width: 100%
+	max-width: 694px
+	background-color: #fff
+	transition: transform 1s ease-out
+	box-shadow: 0 0 15px #000
+	&.rightside-menu--hide
+		transform: translateX(105%)
+	&__content
+		display: flex
+		flex-direction: column
+		align-items: center
+		.logo-big
+			margin: 124px 0 41px
+	.cross
+		height: 26px
+		width: 26px
+		transition: fill .25s ease-out
+	&__close
+		position: absolute
+		margin-top: 41px
+		margin-left: 47px
+		background-color: transparent
+		&:hover
+			.cross
+				fill: $accent
+	&__title
+		@extend %title-font
+		font-size: 36px
+		line-height: 51px
+		color: $main-black
+		position: relative
+		padding: 0 0 10px 0
+		margin: 0 0 17px
+		&::after
+			content: ''
+			width: 252px
+			height: 1px
+			background-color: #000000FF
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+	&__text
+		width: 483px
+		text-align: center
+		margin-bottom: 75px
+	&__image
+		max-width: 483px
+		margin: 0 10px
+
+//                                                         top slider
+
+.top__slider
+	height: 815px
+	padding-bottom: 20px
+	margin-bottom: 87px
+	&-wrapper
+		background-repeat: no-repeat
+		background-position: top
+		background-size: auto 712px
+	&-item
+		display: flex
+		align-items: center
+	&-picture
+		margin-left: 8.5%
+	&-img
+		max-width: 703px
+		max-height: 815px
+		// object-fit: cover, браузер масштабирует изображение так,
+		//  чтобы оно полностью заполнило контейнер, при этом сохраняя пропорции
+		object-fit: cover
+	&-info
+		width: 635px
+		margin-left: 20px
+		margin-bottom: 80px
+	&-title
+		@extend %title-font
+		font-size: 110px
+		line-height: 1.25
+		display: inline-block
+		position: relative
+		padding-bottom: 20px
+		margin-bottom: 26px
+		letter-spacing: 0
+		color: $main-black
+		&::after
+			content: ''
+			width: 185px
+			height: 1px
+			background-color: #6D7278
+			position: absolute
+			bottom: 0
+			left: 0
+	&-text
+		width: 570px
+
