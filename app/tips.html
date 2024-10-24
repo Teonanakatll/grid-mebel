@@ -1,7 +1,8 @@
+<!-- указав инлайново height начинает корректно работать lazyloading на маленьких разрешениях переопределить через !important -->
 <picture>
     <source srcset="images/myimage.avif" type="image/avif">
     <source srcset="images/myimage.webp" type="image/webp">
-    <img class="myimage" src="images/myimage.jpg" alt="myimage" loading="lazy">
+    <img class="myimage" src="images/myimage.jpg" alt="myimage" height="350" loading="lazy">
 </picture>
 
 /* Фолбэк — используется обычный формат (например, jpg) */

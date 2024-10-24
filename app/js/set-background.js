@@ -33,9 +33,11 @@ export function setBackgrounds() {
 
 	// Функция для ленивой загрузки картинок
 	function lazyLoadImages() {
+
 	const lazyImages = document.querySelectorAll("img[loading='lazy']");
 
 	if ("IntersectionObserver" in window) {
+		
 			let observer = new IntersectionObserver((entries, observer) => {
 					entries.forEach(entry => {
 							if (entry.isIntersecting) {
@@ -106,4 +108,5 @@ export function setBackgrounds() {
 	}
 
 	setBackgrounds();
+	// lazyLoadImages();
 }
