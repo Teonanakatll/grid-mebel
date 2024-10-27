@@ -1,4 +1,4 @@
-.wrapper 
+.wrapper
 	display: flex
 	flex-direction: column
 	min-height: 100vh
@@ -6,10 +6,11 @@
 	padding: 0 10px
 	margin: 0 auto
 
-.main 
+.main
 	flex: 1 0 auto
+	position: relative
 
-.footer 
+.footer
 	flex: 0 0 auto
 
 .container
@@ -27,16 +28,37 @@ html
 	--swiper-pagination-bullet-horizontal-gap: 15px
 .pagination-custom
 	text-align: center
+	margin: 0 auto
 	.swiper-pagination-bullet
 		background-color: $main-black
 		opacity: 1
 		&.swiper-pagination-bullet-active
 			background-color: $accent
 
+.info-mail
+	font-weight: 600
+	font-size: 14px
+	color: $main-black
+	display: flex
+	align-items: center
+	margin-bottom: 22px
+	transition: color .25s ease-out
+	.info-icon
+		height: 16px
+		width: 16px
+		margin-right: 14px
+		fill: $main-black
+		transition: fill .25s ease-out
+	&:hover
+		color: #000
+		.info-icon
+			fill: #000
+
 .collection
 	display: grid
 	grid-template-columns: repeat(5, 1fr)
 	column-gap: 30px
+	padding: 0 15px
 	&__item
 		position: relative
 		&:hover
@@ -83,3 +105,12 @@ html
 		&-text
 			font-size: 14px
 			color: #707070
+
+.submit-button
+	width: 181px
+	height: 40px
+	border-radius: 21px
+	background-color: $main-black
+	color: #fff
+	&:hover
+		background-color:#222020FF

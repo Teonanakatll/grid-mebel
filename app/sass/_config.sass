@@ -18,7 +18,7 @@
 // xxl — 1400px
 
 $accent88: #F88500 // Accent Color
-$accent: #F1D152 // Accent Color
+$accent: #FFF79A // Accent Color
 $accent-2: #ff0099
 $main-black: #363838
 $textcolor: #5a5a5a // Text Color
@@ -44,6 +44,7 @@ $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font
 // расширение файла не пишем ! (css)
 
 @import 'node_modules/swiper/swiper-bundle.min'
+@import 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox'
 // FONTS LOAD SECTION
 
 @mixin font($fname, $fstyle, $fweight, $furl)
@@ -121,5 +122,5 @@ a
 	text-decoration: none
 
 input:focus, button:focus, textarea:focus
-	outline: 2px solid transparent
+	outline: 2px solid $accent88
 

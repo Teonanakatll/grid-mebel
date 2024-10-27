@@ -12,6 +12,7 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.4",
+    "@fancyapps/fancybox": "^3.5.7",
     "autoprefixer": "^10.4.20",
     "babel-loader": "^9.2.1",
     "babel-plugin-root-import": "^6.6.0",
@@ -38,6 +39,7 @@
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
     "jquery": "^3.7.1",
+    "mixitup": "^3.3.1",
     "sass": "^1.79.3",
     "sharp": "^0.33.5",
     "swiper": "^11.1.14",

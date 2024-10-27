@@ -32,6 +32,7 @@ const notify = require('gulp-notify');
 
 function pages() {
 	return src('app/pages/*.html')
+		// .pipe(newer('app'))
 		.pipe(include({
 			includePaths: 'app/parts'
 		}))
@@ -73,7 +74,9 @@ function sprite() {
 	if (fs.existsSync(spritePath)) {
 		fs.unlinkSync(spritePath);
 	}
-	return src(['app/images/**/*.svg', '!app/images/src/**/*.*'])
+	return src(['app/images/**/*.svg',
+							'!app/images/icons/*.*',
+						  '!app/images/src/**/*.*'])
 		.pipe(svgSprite({
 			mode: {
 				stack: {

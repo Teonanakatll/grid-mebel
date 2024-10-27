@@ -2,7 +2,7 @@
 <picture>
     <source srcset="images/myimage.avif" type="image/avif">
     <source srcset="images/myimage.webp" type="image/webp">
-    <img class="myimage" src="images/myimage.jpg" alt="myimage" height="350" loading="lazy">
+    <img class="myimage" src="images/myimage.jpg" alt="myimage" loading="lazy">
 </picture>
 
 /* Фолбэк — используется обычный формат (например, jpg) */
@@ -46,7 +46,7 @@
  <!-- aria-label="text" указывается для ссылки или кнопки только если нет текста в самой ссылке-->
 <!-- aria-hidden="true" для самих svg если они декоративные и не содержат важной информации для экранных читалок -->
 <svg class="tesla" role="img" aria-hidden="true">
-    <use xlink:href="images/sprite.svg#tesla-9"></use>
+    <use xlink:href="images/sprite.svg#tesla"></use>
 </svg>
 
 <svg class="nasa" role="img" aria-hidden="true">
@@ -55,7 +55,7 @@
 
 <!-- для кнопки меню -->
 <button class="header__btn" aria-label="Меню">
-    <svg aria-hidder="true">
+    <svg aria-hidden="true">
         <use xlink:href="images/sprite.svg#icon_menu"></use>
     </svg>
 </button>

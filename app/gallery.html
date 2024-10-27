@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/main.min.js" defer></script>
+</head>
+<body>
+
+<!--                                            Во врапере находится всё включая футер -->
+<div class="wrapper">
+
+	<header class="header">
+
+		<div class="container">
+
+			<div class="header__inner">
+
+				<nav class="menu">
+
+					<ul class="menu__list">
+
+						<li class="menu__list-item">
+
+							<!-- <a class="menu__list-link" href="about.html">About</a> -->
+
+							<span class="menu__list-link">About</span>
+
+						</li>
+
+						<li class="menu__list-item">
+
+							<a class="menu__list-link" href="gallery.html">Gallery</a>
+
+						</li>
+
+					</ul>
+
+				</nav>
+
+				<a class="logo" href="index.html">
+
+					<img src="images/logo.png" alt="logo">
+
+				</a>
+
+				<nav class="menu">
+
+					<ul class="menu__list">
+
+						<li class="menu__list-item">
+
+							<a class="menu__list-link" href="#">Blog</a>
+
+						</li>
+
+						<li class="menu__list-item">
+
+							<a class="menu__list-link" href="contacts.html">Contacts</a>
+
+						</li>
+
+					</ul>
+
+				</nav>
+
+	
+
+				<button class="header__btn" aria-label="Меню">
+
+					<svg aria-hidden="true">
+
+						<use xlink:href="images/sprite.svg#icon_menu"></use>
+
+					</svg>
+
+				</button>
+
+	
+
+				<div class="rightside-menu rightside-menu--hide">
+
+					<button class="rightside-menu__close">
+
+						<svg class="cross">
+
+							<use xlink:href="images/sprite.svg#cross"></use>
+
+						</svg>
+
+					</button>
+
+					<div class="rightside-menu__content">
+
+						<a class="logo" href="#">
+
+							<img class="logo-big" src="images/logo-big.png" alt="logo" loading="lazy">
+
+						</a>
+
+						<h4 class="rightside-menu__title">
+
+							Furniture for life
+
+						</h4>
+
+						<p class="rightside-menu__text">
+
+							Sustainable hot chicken skateboard, dreamcatcher meggings actually squid. Slow-carb everyday carry +1 art
+
+							party microdosing, put a bird on it brooklyn
+
+						</p>
+
+						<picture>
+
+							<source srcset="images/content/chair.avif" type="image/avif">
+
+							<source srcset="images/content/chair.webp" type="image/webp">
+
+							<img class="rightside-menu__image" src="images/content/chair.jpg" alt="chair" loading="lazy">
+
+						</picture>
+
+					</div>
+
+				</div>
+
+	
+
+			</div>
+
+		</div>
+
+	</header>
+
+	<main class="main">
+
+		<div class="breadcrumbs">
+			<div class="container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a class="breadcrumbs__link" href="index.html">Home</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<span class="breadcrumbs__span"> About</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="gallery gallery--page">
+
+			<div class="gallery__buttons">
+
+				<!-- если кнопка не должна отправлять форму ей необходимо прописать type="button" -->
+
+				<button class="gallery__btn" data-filter=".bedroom" type="button">Bedroom furniture</button>
+
+				<button class="gallery__btn" data-filter=".living" type="button">Living room furniture</button>
+
+				<button class="gallery__btn" data-filter=".office" type="button">Office furniture</button>
+
+				<button class="gallery__btn" data-filter=".dining" type="button">Dining room futniture</button>
+
+				<button class="gallery__btn" data-filter=".chair" type="button">Chair</button>
+
+				sfsadfasdfasf
+
+			</div>
+
+			<div class="gallery__inner">
+
+		
+
+				<div class="gallery__items mix bedroom">
+
+					<a class="gallery__item galery__item--first" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/1.avif" type="image/avif">
+
+							<source srcset="images/gallery/1.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/1.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/2.avif" type="image/avif">
+
+							<source srcset="images/gallery/2.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/2.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/3.avif" type="image/avif">
+
+							<source srcset="images/gallery/3.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/3.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/4.avif" type="image/avif">
+
+							<source srcset="images/gallery/4.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/4.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/5.avif" type="image/avif">
+
+							<source srcset="images/gallery/5.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/5.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/6.avif" type="image/avif">
+
+							<source srcset="images/gallery/6.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/6.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/7.avif" type="image/avif">
+
+							<source srcset="images/gallery/7.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/7.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/8.avif" type="image/avif">
+
+							<source srcset="images/gallery/8.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/8.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/9.avif" type="image/avif">
+
+							<source srcset="images/gallery/9.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/9.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/10.avif" type="image/avif">
+
+							<source srcset="images/gallery/10.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/10.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+				</div>
+
+		
+
+				<div class="gallery__items mix living">
+
+					<a class="gallery__item galery__item--first" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/1.avif" type="image/avif">
+
+							<source srcset="images/gallery/1.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/1.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/2.avif" type="image/avif">
+
+							<source srcset="images/gallery/2.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/2.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/3.avif" type="image/avif">
+
+							<source srcset="images/gallery/3.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/3.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/4.avif" type="image/avif">
+
+							<source srcset="images/gallery/4.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/4.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/5.avif" type="image/avif">
+
+							<source srcset="images/gallery/5.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/5.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/6.avif" type="image/avif">
+
+							<source srcset="images/gallery/6.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/6.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/7.avif" type="image/avif">
+
+							<source srcset="images/gallery/7.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/7.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/8.avif" type="image/avif">
+
+							<source srcset="images/gallery/8.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/8.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/9.avif" type="image/avif">
+
+							<source srcset="images/gallery/9.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/9.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/10.avif" type="image/avif">
+
+							<source srcset="images/gallery/10.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/10.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+				</div>
+
+		
+
+				<div class="gallery__items mix office">
+
+					<a class="gallery__item galery__item--first" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/1.avif" type="image/avif">
+
+							<source srcset="images/gallery/1.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/1.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/2.avif" type="image/avif">
+
+							<source srcset="images/gallery/2.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/2.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/3.avif" type="image/avif">
+
+							<source srcset="images/gallery/3.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/3.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/4.avif" type="image/avif">
+
+							<source srcset="images/gallery/4.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/4.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/5.avif" type="image/avif">
+
+							<source srcset="images/gallery/5.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/5.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/6.avif" type="image/avif">
+
+							<source srcset="images/gallery/6.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/6.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/7.avif" type="image/avif">
+
+							<source srcset="images/gallery/7.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/7.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/8.avif" type="image/avif">
+
+							<source srcset="images/gallery/8.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/8.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/9.avif" type="image/avif">
+
+							<source srcset="images/gallery/9.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/9.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/10.avif" type="image/avif">
+
+							<source srcset="images/gallery/10.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/10.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+				</div>
+
+		
+
+				<div class="gallery__items mix dining">
+
+					<a class="gallery__item galery__item--first" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/1.avif" type="image/avif">
+
+							<source srcset="images/gallery/1.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/1.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/2.avif" type="image/avif">
+
+							<source srcset="images/gallery/2.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/2.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/3.avif" type="image/avif">
+
+							<source srcset="images/gallery/3.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/3.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/4.avif" type="image/avif">
+
+							<source srcset="images/gallery/4.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/4.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/5.avif" type="image/avif">
+
+							<source srcset="images/gallery/5.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/5.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/6.avif" type="image/avif">
+
+							<source srcset="images/gallery/6.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/6.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/7.avif" type="image/avif">
+
+							<source srcset="images/gallery/7.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/7.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/8.avif" type="image/avif">
+
+							<source srcset="images/gallery/8.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/8.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/9.avif" type="image/avif">
+
+							<source srcset="images/gallery/9.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/9.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/10.avif" type="image/avif">
+
+							<source srcset="images/gallery/10.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/10.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+				</div>
+
+		
+
+				<div class="gallery__items mix chair">
+
+					<a class="gallery__item galery__item--first" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/1.avif" type="image/avif">
+
+							<source srcset="images/gallery/1.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/1.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/2.avif" type="image/avif">
+
+							<source srcset="images/gallery/2.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/2.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/3.avif" type="image/avif">
+
+							<source srcset="images/gallery/3.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/3.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/4.avif" type="image/avif">
+
+							<source srcset="images/gallery/4.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/4.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/5.avif" type="image/avif">
+
+							<source srcset="images/gallery/5.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/5.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/6.avif" type="image/avif">
+
+							<source srcset="images/gallery/6.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/6.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/7.avif" type="image/avif">
+
+							<source srcset="images/gallery/7.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/7.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/8.avif" type="image/avif">
+
+							<source srcset="images/gallery/8.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/8.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/9.avif" type="image/avif">
+
+							<source srcset="images/gallery/9.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/9.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+					<a class="gallery__item" href="#">
+
+						<picture>
+
+							<source srcset="images/gallery/10.avif" type="image/avif">
+
+							<source srcset="images/gallery/10.webp" type="image/webp">
+
+							<img class="gallery__item-img" src="images/gallery/10.jpg" alt="myimage" loading="lazy">
+
+						</picture>
+
+					</a>
+
+				</div>
+
+		
+
+			</div>
+
+		</div>
+	</main>
+	
+	
+	
+	  <footer class="footer">
+	
+	    <div class="footer__content">
+	
+	      <div class="container">
+	
+	        <div class="footer__inner">
+	
+	
+	
+	          <div class="footer__info">
+	
+	            <h6 class="footer__info-title">
+	
+	              Contact Us
+	
+	            </h6>
+	
+	            <div class="footer__info-text">
+	
+	              Keffiyeh poutine etsy, paleo cray put a bird on it microdosing schlitz you probably occupy
+	
+	            </div>
+	
+	            <a class="info-mail" href="mailto:ouremailaddress@email.com" aria-label="Email">
+	
+	              <svg class="info-icon" aria-hidden="true">
+	
+	                <use xlink:href="images/sprite.svg#icon-mail"></use>
+	
+	              </svg>
+	
+	              ouremailaddress@email.com
+	
+	            </a>
+	
+	            <form class="footer__form">
+	
+	              <input class="footer__form-input" type="email" placeholder="Subscribe by email">
+	
+	              <button class="footer__form-button" type="submit">Send</button>
+	
+	            </form>
+	
+	          </div>
+	
+	
+	
+	          <ul class="footer__social">
+	
+	            <li class="footer__social-item">
+	
+	              <a class="footer__social-link" href="#">
+	
+	                <svg fill="none" class="footer__social-icon" aria-hidden="true">
+	
+	                  <use xlink:href="images/sprite.svg#facebook"></use>
+	
+	                </svg>
+	
+	                Facebook
+	
+	              </a>
+	
+	            </li>
+	
+	            <li class="footer__social-item">
+	
+	              <a class="footer__social-link" href="#">
+	
+	                <svg class="footer__social-icon" aria-hidden="true">
+	
+	                  <use xlink:href="images/sprite.svg#instagram"></use>
+	
+	                </svg>
+	
+	                Instagram
+	
+	              </a>
+	
+	            </li>
+	
+	            <li class="footer__social-item">
+	
+	               <a class="footer__social-link" href="#">
+	
+	                <svg class="footer__social-icon" aria-hidden="true">
+	
+	                  <use xlink:href="images/sprite.svg#Pinterest"></use>
+	
+	                </svg>
+	
+	                Pinterest
+	
+	              </a>
+	
+	            </li>
+	
+	            <li class="footer__social-item">
+	
+	              <a class="footer__social-link"  href="#">
+	
+	                <svg class="footer__social-icon" aria-hidden="true">
+	
+	                  <use xlink:href="images/sprite.svg#whatsapp"></use>
+	
+	                </svg>
+	
+	                WhatsApp
+	
+	              </a>
+	
+	            </li>
+	
+	            <li class="footer__social-item">
+	
+	              <a class="footer__social-link" href="#">
+	
+	                <svg class="footer__social-icon" aria-hidden="true">
+	
+	                  <use xlink:href="images/sprite.svg#youtube"></use>
+	
+	                </svg>
+	
+	                Youtube
+	
+	              </a>
+	
+	            </li>
+	
+	          </ul>
+	
+	
+	
+	          <nav class="footer__menu">
+	
+	            <ul class="footer__menu-list">
+	
+	              <li class="footer__menu-item">
+	
+	                <a href="#" class="footer__menu-link">Delivery</a>
+	
+	              </li>
+	
+	              <li class="footer__menu-item">
+	
+	                <a href="#" class="footer__menu-link">FAQ</a>
+	
+	              </li>
+	
+	              <li class="footer__menu-item">
+	
+	                <a href="#" class="footer__menu-link">Help</a>
+	
+	              </li>
+	
+	              <li class="footer__menu-item">
+	
+	                <a href="#" class="footer__menu-link">More About Us</a>
+	
+	              </li>
+	
+	            </ul>
+	
+	          </nav>
+	
+	        </div>
+	
+	      </div>
+	
+	    </div>
+	
+	
+	
+	
+	
+	    <div class="footer__copyright">
+	
+	      <div class="container">
+	
+	        <p>674 Gonzales Drive.   Washington, PA 15301</p>
+	
+	      </div>
+	
+	    </div>
+	
+	  </footer>
+	
+	
+	
+	<!-- wrapper -->
+	
+	</div>  
+	
+	
+	
+	<noscript>
+	
+	  <link rel="stylesheet" href="css/noscript/noscript-styles.css">
+	
+	</noscript>
+	
+	
+	
+	</body>
+	
+	</html>
