@@ -54,6 +54,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		speed: 1000,
 	})
 
+	const articleSlider = new Swiper('.article-slider__box', {
+		modules: [Navigation],
+		navigation: {
+			prevEl: '.article-slider__prev',
+			nextEl: '.article-slider__next'
+		},
+		spaceBetween: 20,
+		slidesPerView: 1,
+		loop: true,
+		speed: 1000,
+	})
+
 	const container = document.querySelector('.gallery__inner');
 
 	if (container) {

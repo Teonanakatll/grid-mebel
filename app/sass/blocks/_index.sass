@@ -428,6 +428,8 @@
 		margin-bottom: 40px
 		font-weight: 600
 		font-size: 14px
+		display: flex
+		justify-content: center
 	&__btn
 		color: #8F8D8D
 		border: 1px solid rgba(#454647, .5)
@@ -700,7 +702,7 @@
 		&::placeholder
 			color: #a1a1a1
 	&__form-input
-		width: 49%
+		width: 49.4%
 		display: inline-block
 		height: 40px
 		padding: 6px 17px
@@ -746,3 +748,292 @@
 		transform: translate(-50%, -50%)
 		opacity: 0
 		transition: opacity .25s ease-out
+
+//                                       страница blog
+
+.blog
+	margin-top: 60px
+	.container
+		display: flex
+		position: relative
+	&__items
+		flex: 1 0 auto
+		max-width: 730px
+	&__item
+		padding-bottom: 50px
+		margin-bottom: 72px
+	&__item-img
+		height: 415px
+		max-width: 100%
+		object-fit: cover
+		margin-bottom: 25px
+	&__item-info
+		font-size: 14px
+		color: #707070
+		margin-bottom: 9px
+	&__item-author, &__item-category
+		color: #707070
+		transition: color .25s ease-out
+		&:hover
+			color: #000
+	&__item-title
+		@extend %title-font
+		font-size: 24px
+		line-height: 38px
+		transition: color .25s ease-out
+		margin-bottom: 6px
+		&:hover
+			color: #000
+
+.blog__blockquote
+	font-style: italic
+	font-size: 24px
+	line-height: 38px
+	text-align: center
+	color: #363838
+	padding-bottom: 69px
+	position: relative
+	margin: 54px 64px
+	&-author
+		@extend %title-font
+		line-height: 22px
+		font-style: normal
+		font-size: 16px
+		position: absolute
+		bottom: 0
+		width: 100%
+		text-align: center
+		&::before
+			content: ''
+			background-color: #979797
+			width: 200px
+			height: 1px
+			position: absolute
+			top: -27px
+			left: 50%
+			transform: translateX(-50%)
+
+.article-popup
+	padding-bottom: 38px
+	margin-bottom: 55px
+	&__box
+		position: relative
+
+.blog__item-popup
+	position: absolute
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	opacity: 0.6
+	transition: opacity .25s ease-out
+	&:hover
+		opacity: 1
+
+.article-slider
+	position: relative
+	margin-bottom: 0
+	&__navigaton
+		width: 100%
+		display: flex
+		justify-content: space-between
+		position: absolute
+		left: 0
+		top: 50%
+		transform: translateY(-50%)
+		z-index: 10
+	&__next-icon, &__prev-icon
+		fill: #000
+		margin: 0 16px
+		height: 17px
+		width: 10px
+		cursor: pointer
+
+.pagination
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-bottom: 66px
+	&__list
+		display: flex
+		margin: 0 6px
+	&__list-item
+		font-size: 14px
+		padding: 0 6px
+	&__list-num
+		display: block
+		color: #707070
+		transition: color .25s ease-out, transform .25s ease-out
+		&:hover
+			transform: scale(1.2)
+			color: #000
+		&.pagination__list-num--active
+			color: $main-black
+	span
+		&:hover
+			transform: none
+	&__arrow--disabled
+		opacity: 0
+		pointer-events: none
+		cursor: not-allowed
+	&__arrow-img
+		fill: #000
+		width: 6px
+		height: 12px
+		display: block
+		transition: fill .25s ease-out, transform .25s ease-out
+		&:hover
+			transform: scale(1.2)
+			fill: #000
+	&__arrow:first-child
+		transform: rotate(180deg)
+
+//                                       страница blog-one
+.blog-one-page
+	margin-bottom: 101px
+.blog-one__item
+	padding: 0
+	margin-bottom: 35px
+	p
+		margin-bottom: 40px
+	blockquote
+		font-style: italic
+		font-size: 24px
+		font-weight: 300
+		line-height: 38px
+		color: $main-black
+		padding-bottom: 70px
+		margin: 0 42px 30px
+		position: relative
+		span
+			position: absolute
+			bottom: 0
+			left: 0
+			font-family: montserrat-m, sans-serif
+			font-style: normal
+			font-weight: 700
+			font-size: 16px
+			line-height: 23px
+			padding-top: 23px
+			&::before
+				content: ''
+				background-color: #979797
+				width: 177px
+				height: 1px
+				position: absolute
+				top: 0
+				left: 0
+
+.blog-one__tags
+	margin-bottom: 20px
+	.tags-item
+		margin-right: 24px
+		margin-bottom: 20px
+
+.blog-one
+	&__links
+		padding: 40px 0 32px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		position: relative
+		// background-color: $accent88
+		&::after, &::before
+			content: ''
+			background-color: #dfdfdf
+			width: 100%
+			height: 1px
+			border-radius: 1px
+			position: absolute
+			left: 0
+		&::before
+			top: 0
+		&::after
+			bottom: 0
+
+	&__link
+		color: #707070
+
+		display: flex
+		align-items: center
+	&__link-title
+		text-align: right
+		font-weight: 700
+		font-size: 14px
+		margin: 0 21px
+		max-width: 243px
+	&__link:first-child
+		flex-direction: row-reverse
+		.blog-one__link-title
+			text-align: left
+		.blog-one__link-image
+			transform: rotate(180deg)
+	&__link-image
+		fill: rgba(#363838, .7)
+		width: 12px
+		height: 23px
+
+.blog-one__comments
+	&-title
+		@extend %title-font
+		font-size: 20px
+		line-height: 31px
+		margin-bottom: 17px
+	&-item
+		display: flex
+		align-items: start
+		// background-color: $accent88
+		margin-bottom: 40px
+	&-avatar
+		width: 64px
+		height: 64px
+		object-fit: cover
+		margin-right: 13px
+		border-radius: 50%
+	&-info
+		max-width: 606px
+
+	& &-name
+		@extend %title-font
+		line-height: 23px
+		margin-bottom: 0
+	& &-date
+		font-size: 14px
+		color: #a1a1a1
+		margin-bottom: 0
+		line-height: 28px
+		position: relative
+		top: -5px
+	& &-text
+		margin-bottom: 0
+	&-replay
+		font-size: 14px
+		font-weight: 700
+		color: #707070
+		margin-left: 10px
+		background-color: transparent
+
+.blog-one__form
+	.contact__form-area
+		margin-bottom: 12px
+	.contact__form-input
+		margin-bottom: 12px
+	.contact__form-input:nth-child(3)
+		position: relative
+		left: 5px
+
+	.contact__form-label
+		width: 130px
+		height: 28px
+		font-size: 14px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-top: 7px
+		margin-bottom: 25px
+		color: #a1a1a1
+	.contact__form-labelinput
+		width: 21px
+		height: 21px
+		background-color: $accent
+		margin: 0
+		color: #979797
