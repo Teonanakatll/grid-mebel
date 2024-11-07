@@ -4,8 +4,10 @@ export function myJquery() {
 	let logoLink = $('.logo');
 
 	// $ всегда возвращает обьект $ даже если элемент не найден, поэтому проверяем длинну элемента
+	// делает ссылку на логотипе неактивной на главной странице
 	if (mainSlider.length) {
 		logoLink.attr('href', '#');
+		logoLink.css('pointer-events', 'none')
 	} else {
 		logoLink.attr('href', 'index.html')
 	};
@@ -51,4 +53,49 @@ export function myJquery() {
 		})
 	};
 
+	let mobileButton = $('.header__btn-menu');
+	let canToggle = true;
+	const delay = 1000;
+
+	if (mobileButton.length && mobileButton.is(':visible')) {
+		let menu = $('.menu')
+
+		mobileButton.on('click', function(e) {
+			e.stopPropagation();
+			if (canToggle) {
+				menu.stop(true, true).toggleClass('menu--open');
+				canToggle = false;
+
+				setTimeout(() => {
+					canToggle = true;
+				}, delay);
+			}
+		})
+		menu.on('click', function(e) {
+			e.stopPropagation();
+		})
+		if (canToggle) {
+			$('body').on('click', () => {
+				menu.removeClass('menu--open')
+			})
+
+		}
+	}
+
+	$(window).on('resize load', function() {
+    let measureSelect = $('.work__item--measure');
+    let isSmallScreen = $(window).width() < 576;
+    
+    if (isSmallScreen && !measureSelect.hasClass('moved-to-designer')) {
+        // console.log('Less than 576px');
+        measureSelect.addClass('moved-to-designer'); // Помечаем, что элемент перемещен
+        measureSelect.remove();
+        $('.work__item--designer').after(measureSelect);
+    } else if (!isSmallScreen && measureSelect.hasClass('moved-to-designer')) {
+        // console.log('576px or more');
+        measureSelect.removeClass('moved-to-designer'); // Снимаем отметку о перемещении
+        measureSelect.remove();
+        $('.work__items-box').after(measureSelect);
+    }
+});
 }

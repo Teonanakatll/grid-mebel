@@ -34,19 +34,51 @@ document.addEventListener('DOMContentLoaded', () => {
 		loop: true,
 		speed: 2000,
 		autoplay: true,
-		slidesPerView: 5,
+		slidesPerView: 3,
+		breakpoints: {
+			768: {
+				slidesPerView: 5
+			},
+			576: {
+				slidesPerView: 4
+			}
+		}
 	});
 
 	const contactSlider = new Swiper('.contact-slider', {
 		modules: [Mousewheel, Pagination],
 		pagination: {
 			el: '.contact-slider__pagination',
-			// dynamicMainBullets: true,
+			dynamicBullets: true,
+			// dynamicMainBullets: 3,
 			clickable: true,
 		},
-		slidesPerView: 10,
-		slidesPerGroup: 10,
-		spaceBetween: 18,
+		slidesPerView:2,
+		slidesPerGroup:2,
+		spaceBetween: 10,
+		breakpoints: {
+			1600: {
+				slidesPerView: 10,
+				slidesPerGroup: 10,
+				spaceBetween: 18,
+				dynamicMainBullets: 3,
+			},
+			1200: {
+				slidesPerView: 8,
+				slidesPerGroup: 8,
+				pagination: {
+					dynamicBullets: false,
+				},
+			},
+			768: {
+				slidesPerView: 6,
+				slidesPerGroup: 6
+			},
+			576: {
+				slidesPerView: 4,
+				slidesPerGroup: 4
+			},
+		},
 		mousewheel: {
 			invert: true,
 		},

@@ -30,7 +30,6 @@
 	line-height: 23px
 	font-size: 16px
 
-
 //                                swiper vars
 html
 	--swiper-pagination-bullet-horizontal-gap: 15px
@@ -39,9 +38,16 @@ html
 	margin: 0 auto
 	.swiper-pagination-bullet
 		background-color: $main-black
+		transform: scale(.8)
 		opacity: 1
 		&.swiper-pagination-bullet-active
 			background-color: $accent
+			transform: scale(1)
+			&-next-next, &-prev-prev
+				transform: scale(.6)
+
+.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+	transform: none
 
 .info-mail
 	font-weight: 600
